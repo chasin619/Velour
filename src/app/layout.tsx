@@ -5,7 +5,7 @@ import Footer from "@/layout/footer";
 import "./globals.css";
 
 const poppins = Poppins({
-  weight: ["400", "500", "600"],
+  weight: ["200", "400", "500", "600"],
   display: "swap",
 });
 

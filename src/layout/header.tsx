@@ -11,7 +11,7 @@ const Header = () => {
         {navList.map((item, index) => (
           <li
             key={index}
-            className="text-base font-extralight pb-1 border-b-2 border-transparent hover:border-b-yellow-500 transition duration-300 ease-in-out"
+            className="text-base pb-1 border-b-2 border-transparent hover:border-b-yellow-500 transition duration-300 ease-in-out"
           >
             <Link href={item.href}>{item.name}</Link>
           </li>
