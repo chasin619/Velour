@@ -1,8 +1,13 @@
 import React from "react";
-import { HeroSection } from "@/ui/home";
+import { HeroSection, ServiceSection } from "@/ui/home";
 
 const Home = () => {
-  return <HeroSection />;
+  return (
+    <>
+      <HeroSection />
+      <ServiceSection />
+    </>
+  );
 };
 
 export default Home;
