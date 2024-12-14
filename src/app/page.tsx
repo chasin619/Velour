@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroSection, PortfolioSection, ServiceSection } from "@/ui/home";
+import { HeroSection, PortfolioSection, ReviewSection, ServiceSection } from "@/ui/home";
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <HeroSection />
       <ServiceSection />
       <PortfolioSection />
+      <ReviewSection />
     </>
   );
 };

@@ -5,7 +5,7 @@ import { portfolioData } from "@/utils/constants";
 
 const Portfolio = () => {
   return (
-    <section className="w-full mx-auto">
+    <section className="w-full">
       {portfolioData.map((portfolio, index) => (
         <div
           className={`${

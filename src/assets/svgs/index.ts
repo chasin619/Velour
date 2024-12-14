@@ -6,3 +6,4 @@ export { default as CallSvg } from "./call.svg";
 export { default as ServiceSvg } from "./service.svg";
 export { default as BusinessSvg } from "./business.svg";
 export { default as RevenueSvg } from "./revenue.svg";
+export { default as QouteSvg } from "./qoute.svg";
