@@ -13,6 +13,7 @@ const Portfolio = () => {
               ? "bg-primaryGray"
               : "bg-darkBlack"
           } mx-auto`}
+          key={index}
         >
           <div
             className={`max-w-[1400px] mx-auto flex justify-center items-center gap-10 w-full py-8 min-h-[80vh] ${

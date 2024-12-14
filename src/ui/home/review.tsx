@@ -12,8 +12,8 @@ const Review = () => {
         Trusted by top wedding florists and planners for elegant web design.
       </p>
       <div className="flex justify-center items-center gap-6 mt-20">
-        {Array.from({ length: 3 }).map(() => (
-          <div className="bg-white rounded-2xl max-w-[500px] p-8">
+        {Array.from({ length: 3 }).map((_, index) => (
+          <div className="bg-white rounded-2xl max-w-[500px] p-8" key={index}>
             <Image src={QouteSvg} alt="Qoute Image" className="mb-8" />
             <p className="text-[#808080]">
               In publishing and graphic design, Lorem ipsum is a placeholder
