@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+
 import { Button } from "@/components/button";
 import { navList } from "@/utils/constants";
+import { scrollToSection } from "@/utils/helpers";
 
 const Header = () => {
   return (
@@ -13,7 +17,13 @@ const Header = () => {
             key={index}
             className="text-base pb-1 border-b-2 border-transparent hover:border-b-yellow-500 transition duration-300 ease-in-out"
           >
-            <Link href={item.href}>{item.name}</Link>
+            <Link
+              href={item.href}
+              data-target={item.targetAtr}
+              onClick={item.targetAtr ? scrollToSection : () => {}}
+            >
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>

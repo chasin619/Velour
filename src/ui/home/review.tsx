@@ -7,7 +7,7 @@ import { Rating } from "react-simple-star-rating";
 
 const Review = () => {
   return (
-    <section className="max-w-[1400px] mx-auto py-28 px-12">
+    <section className="max-w-[1400px] mx-auto py-28 px-12" id="review">
       <p className="text-5xl font-bold text-center">
         Trusted by top wedding florists and planners for elegant web design.
       </p>

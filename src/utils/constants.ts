@@ -1,19 +1,22 @@
 export const navList = [
   {
     name: "Home",
-    href: "/home",
+    href: "/",
   },
   {
     name: "Service",
-    href: "/service",
+    href: "/",
+    targetAtr: "service",
   },
   {
-    name: "Cases",
-    href: "/cases",
+    name: "Review",
+    href: "/",
+    targetAtr: "review",
   },
   {
-    name: "About",
-    href: "/about",
+    name: "Portfolio",
+    href: "/",
+    targetAtr: "portfolio",
   },
   {
     name: "Blog",
@@ -21,7 +24,8 @@ export const navList = [
   },
   {
     name: "Contact us",
-    href: "/contact",
+    href: "/",
+    targetAtr: "contact-us",
   },
 ];
 

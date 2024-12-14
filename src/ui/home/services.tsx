@@ -6,7 +6,7 @@ import { serviceData } from "@/utils/constants";
 
 const Services = () => {
   return (
-    <section className="flex justify-center items-center w-full flex-col bg-primaryGray relative py-20">
+    <section className="flex justify-center items-center w-full flex-col bg-primaryGray relative py-20" id="service">
       <div className="flex justify-center w-full items-center gap-32 absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="flex justify-center items-center cursor-pointer gap-6 bg-yellow-400 text-black font-medium px-20 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-yellow-500 hover:shadow-lg">
           <Image src={CallSvg} alt="Call Svg" />
