@@ -4,7 +4,7 @@ import { Button } from "@/components/button";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center items-center gap-10 max-w-[1400px] mx-auto py-8 min-h-[70vh]">
+    <section className="flex justify-center items-center gap-10 max-w-[1400px] mx-auto py-8 min-h-[80vh]">
       <div className="w-1/2">
         <h1 className="text-5xl">
           Elevate Your Brand with Luxurious Web Presence.

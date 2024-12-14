@@ -1,11 +1,12 @@
 import React from "react";
-import { HeroSection, ServiceSection } from "@/ui/home";
+import { HeroSection, PortfolioSection, ServiceSection } from "@/ui/home";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
       <ServiceSection />
+      <PortfolioSection />
     </>
   );
 };
