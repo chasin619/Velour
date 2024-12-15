@@ -7,11 +7,11 @@ import { Rating } from "react-simple-star-rating";
 
 const Review = () => {
   return (
-    <section className="max-w-[1400px] mx-auto py-28 px-12" id="review">
-      <p className="text-5xl font-bold text-center">
+    <section className="max-w-[1400px] mx-auto xs:py-14 lg:py-20 lg:px-12 xs:px-5" id="review">
+      <p className="xs:text-4xl md:text-5xl font-bold text-center">
         Trusted by top wedding florists and planners for elegant web design.
       </p>
-      <div className="flex justify-center items-center gap-6 mt-20">
+      <div className="grid place-items-center xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
         {Array.from({ length: 3 }).map((_, index) => (
           <div className="bg-white rounded-2xl max-w-[500px] p-8" key={index}>
             <Image src={QouteSvg} alt="Qoute Image" className="mb-8" />
@@ -34,7 +34,7 @@ const Review = () => {
                     objectFit="cover"
                   />
                 </div>
-                <p className="text-darkBlack text-lg">Barbara D. Smith</p>
+                <p className="text-darkBlack md:text-lg">Barbara D. Smith</p>
               </div>
               <Rating
                 initialValue={5}

@@ -20,7 +20,7 @@ const Input: React.FC<InputProps> = ({
       onChange={onChange}
       placeholder={placeholder}
       name={name}
-      className="border border-[#E6E6E6] rounded-md p-4 w-[500px]"
+      className="border border-[#E6E6E6] rounded-md p-4 xs:w-full lg:w-[500px]"
     />
   );
 };

@@ -12,18 +12,18 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-primaryGray w-full">
-      <div className="max-w-[1400px] mx-auto">
-        <div className="flex justify-between items-center pt-12 pb-14">
+      <div className="max-w-[1400px] mx-auto xs:px-5 lg:px-0">
+        <div className="flex justify-between items-center xs:flex-col md:flex-row pt-12 gap-6 pb-14">
           <p className="font-extrabold text-4xl self-start">velour</p>
-          <div className="flex flex-col">
-            <ul className="flex justify-center gap-12 border-b-[0.1px] pb-3 border-white">
+          <div className="flex flex-col xs:w-full md:w-auto">
+            <ul className="flex justify-center xs:flex-col md:flex-row gap-12 md:border-b-[0.1px] pb-3 border-white">
               {navList.map((item, index) => (
                 <li key={index} className="text-base font-extralight">
                   <Link href={item.href}>{item.name}</Link>
                 </li>
               ))}
             </ul>
-            <div className="flex items-center gap-4 mt-4 self-end">
+            <div className="flex items-center gap-4 mt-4 md:self-end">
               <Image src={FacebookSvg} alt="Facebook Image" />
               <Image src={InstagramSvg} alt="Instagram Image" />
               <Image src={TwitterSvg} alt="Twitter Image" />
