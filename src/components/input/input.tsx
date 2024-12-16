@@ -5,7 +5,7 @@ type InputProps = {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   name?: string;
-  error: any;
+  error?: any;
 };
 
 const Input: React.FC<InputProps> = ({
@@ -16,6 +16,7 @@ const Input: React.FC<InputProps> = ({
   error,
   ...props
 }) => {
+  const errorMsg = error[name || ""]?.message;
   return (
     <div className="flex flex-col">
       <input
@@ -26,7 +27,7 @@ const Input: React.FC<InputProps> = ({
         name={name}
         className="border border-[#E6E6E6] rounded-md p-4 xs:w-full lg:w-[500px] text-darkBlack"
       />
-      {error?.message && <p className="text-[#ff2c2c] p-2">{error.message}</p>}
+      {errorMsg && <p className="text-[#ff2c2c] p-2">{errorMsg}</p>}
     </div>
   );
 };

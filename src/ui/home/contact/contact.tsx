@@ -41,7 +41,7 @@ const Contact = () => {
             {...feild}
             {...register(feild.name)}
             key={index}
-            error={errors?.[feild.name]}
+            error={errors}
           />
         ))}
         <textarea

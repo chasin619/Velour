@@ -20,7 +20,7 @@ const useContact = () => {
     form.reset();
   };
 
-  const FEILDS = [
+  const FEILDS: any = [
     {
       name: "name",
       placeholder: "Name",
