@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Toaster position="top-center" />
       </body>
     </html>
   );

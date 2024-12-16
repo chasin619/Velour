@@ -9,10 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "@types/nodemailer": "^6.4.17",
+    "axios": "^1.7.9",
     "next": "15.1.0",
+    "nodemailer": "^6.9.16",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-simple-star-rating": "^5.1.7"
+    "react-hook-form": "^7.54.1",
+    "react-hot-toast": "^2.4.1",
+    "react-simple-star-rating": "^5.1.7",
+    "yup": "^1.5.0",
+    "zustand": "^5.0.2"
   },
   "devDependencies": {
     "@types/node": "^20",
