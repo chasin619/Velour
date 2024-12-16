@@ -12,7 +12,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-primaryGray w-full">
-      <div className="max-w-[1400px] mx-auto xs:px-5 lg:px-0">
+      <div className="max-w-[1400px] mx-auto xs:px-5 lg:px-8">
         <div className="flex justify-between items-center xs:flex-col md:flex-row pt-12 gap-6 pb-14">
           <p className="font-extrabold text-4xl self-start">velour</p>
           <div className="flex flex-col xs:w-full md:w-auto">

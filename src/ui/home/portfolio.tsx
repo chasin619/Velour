@@ -16,7 +16,7 @@ const Portfolio = () => {
           key={index}
         > 
           <div
-            className={`max-w-[1400px] mx-auto flex justify-center items-center gap-10 w-full py-8 min-h-[80vh] xs:px-5 lg:px-0 ${
+            className={`max-w-[1400px] mx-auto flex justify-center items-center gap-10 w-full py-8 min-h-[80vh] xs:px-5 lg:px-8 ${
               portfolio.direction === "row-reverse"
                 ? "xs:flex-col md:flex-row-reverse"
                 : "xs:flex-col md:flex-row"

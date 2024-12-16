@@ -21,7 +21,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="flex justify-around items-center xs:flex-col md:flex-row gap-10 max-w-[1400px] mx-auto xs:px-5 lg:px-0 xs:py-12 lg:py-20 min-h-[60vh]" id="contact-us">
+    <section className="flex justify-around items-center xs:flex-col md:flex-row gap-10 max-w-[1400px] mx-auto xs:px-5 lg:px-8 xs:py-12 lg:py-20 min-h-[60vh]" id="contact-us">
       <div className="xs:w-full lg:w-1/2">
         <p className="text-yellow-500 mb-2 font-medium xs:text-2xl lg:text-3xl">
           Ready to elevate your brand?

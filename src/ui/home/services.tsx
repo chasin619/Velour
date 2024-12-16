@@ -6,7 +6,7 @@ import { serviceData } from "@/utils/constants";
 
 const Services = () => {
   return (
-    <section className="grid place-items-center w-full relative bg-primaryGray xs:py-8 lg:py-20" id="service">
+    <section className="grid place-items-center w-full relative bg-primaryGray xs:py-8 lg:py-20 xs:px-5 lg:px-8" id="service">
       <div className="xs:hidden md:grid grid-cols-3 gap-10 place-items-center w-full max-w-6xl px-4 absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="flex justify-center items-center cursor-pointer gap-6 bg-yellow-400 text-black font-medium px-16 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-yellow-500 hover:shadow-lg">
           <Image src={CallSvg} alt="Call Svg" />
