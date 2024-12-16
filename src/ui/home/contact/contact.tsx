@@ -6,7 +6,7 @@ import { Input } from "@/components/input";
 import useContact from "./action";
 
 const Contact = () => {
-  const { FEILDS, onSubmit, form } = useContact();
+  const { FEILDS, onSubmit, form, isLoading } = useContact();
   const {
     handleSubmit,
     register,
@@ -53,9 +53,15 @@ const Contact = () => {
           rows={5}
         />
         {errors.message && (
-          <p className="text-[#ff2c2c] w-full text-left">{errors.message.message}</p>
+          <p className="text-[#ff2c2c] w-full text-left">
+            {errors.message.message}
+          </p>
         )}
-        <Button title="Submit" buttonStyles="w-full py-4 mt-2" />
+        <Button
+          title="Submit"
+          buttonStyles="w-full py-4 mt-2"
+          disabled={isLoading}
+        />
       </form>
     </section>
   );

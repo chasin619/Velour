@@ -39,6 +39,7 @@ const Review = () => {
               <Rating
                 initialValue={5}
                 size={25}
+                emptyColor="#FFBC0F"
                 allowFraction={false}
                 allowHover={false}
                 readonly
