@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/button";
+import { scrollToSection } from "@/utils/helpers";
 
 const Hero = () => {
   return (
@@ -13,7 +16,11 @@ const Hero = () => {
           Custom websites tailored to reflect the elegance and sophistication of
           your brand.
         </p>
-        <Button title="Get Started" />
+        <Button
+          title="Get Started"
+          data-target={"contact-us"}
+          onClick={scrollToSection}
+        />
       </div>
       <Image src="/hero.png" alt="Hero Image" height="450" width="600" />
     </section>

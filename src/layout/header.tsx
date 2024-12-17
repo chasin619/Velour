@@ -73,7 +73,12 @@ const Header = () => {
           </Link>
         ))}
       </div>
-      <Button title="Get Started" buttonStyles="hidden lg:block" />
+      <Button
+        title="Get Started"
+        buttonStyles="hidden lg:block"
+        data-target={"contact-us"}
+        onClick={scrollToSection}
+      />
     </header>
   );
 };
