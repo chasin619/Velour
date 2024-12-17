@@ -83,6 +83,7 @@ export const blogData = [
     slug: "should-i-study-abroad",
     content:
       "Learn the pros and cons of studying abroad and see how it can enrich your education, expand your horizons, and ignite new adventures...",
+    author: "by Interstride",
     createdAt: "November 18, 2024",
     image: "https://picsum.photos/2000/2000?random=1",
   },
