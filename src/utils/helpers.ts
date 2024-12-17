@@ -25,3 +25,12 @@ export const formatDate = (date: string | Date): string => {
   };
   return new Date(date).toLocaleDateString("en-US", options);
 };
+
+
+export const getHeaders = () => {
+  return {
+    headers: {
+      userId: `675f2725de1dcc5fd9f32936`,
+    },
+  };
+}

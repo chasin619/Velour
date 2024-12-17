@@ -4,19 +4,15 @@ import axios from "axios";
 import { createJSONStorage, persist } from "zustand/middleware";
 
 import { zustandStorage } from "./storage/storage";
+import { BASE_URL } from "@/utils/constants";
+import { getHeaders } from "@/utils/helpers";
 
 interface BlogStore {
   blogs: any[];
-  reviews: any[];
-  portfolios: any[];
-  loading: boolean;
 }
 
 const initialValues: BlogStore = {
   blogs: [],
-  reviews: [],
-  portfolios: [],
-  loading: false,
 };
 
 const useHomeStore = create(
@@ -29,6 +25,17 @@ const useHomeStore = create(
           toast.success(response.data.message);
         } catch (error) {
           console.log(error);
+        }
+      },
+      getAllBlogs: async () => {
+        try {
+          const headers = getHeaders();
+          const response = await axios.get(`${BASE_URL}/api/blog/get-blogs`, {
+            ...headers,
+          });
+          set({ blogs: response.data.blogs });
+        } catch (error: any) {
+          console.error("Error fetching blogs:", error.message);
         }
       },
       reset: () => set({}),

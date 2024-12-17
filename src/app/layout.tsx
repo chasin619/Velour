@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
         <Header />
-        <main className="mt-28">{children}</main>
+        <main className="mt-20">{children}</main>
         <Footer />
         <Toaster position="top-center" />
       </body>

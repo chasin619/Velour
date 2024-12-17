@@ -1,3 +1,5 @@
+export const BASE_URL = "https://velourweb-admin.vercel.app";
+
 export const navList = [
   {
     name: "Home",
