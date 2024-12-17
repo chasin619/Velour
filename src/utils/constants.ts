@@ -83,7 +83,6 @@ export const blogData = [
     slug: "should-i-study-abroad",
     content:
       "Learn the pros and cons of studying abroad and see how it can enrich your education, expand your horizons, and ignite new adventures...",
-    author: "by Interstride",
     createdAt: "November 18, 2024",
     image: "https://picsum.photos/2000/2000?random=1",
   },
@@ -149,5 +148,26 @@ export const blogData = [
     author: "by Finance Gurus",
     createdAt: "September 25, 2024",
     image: "https://picsum.photos/2000/2000?random=8",
+  },
+];
+
+export const reviews = [
+  {
+    text: "This platform has transformed our event planning process, making it incredibly efficient and visually appealing. From the intuitive interface to the exceptional customer support, everything has been thoughtfully designed to cater to our needs as wedding planners. The ease of use allows us to focus more on creative aspects without worrying about logistical complexities.",
+    author: "James C. Foster",
+    rating: 5,
+    image: "/review-1.jpg",
+  },
+  {
+    text: "As a veteran in the wedding industry, I find the design and functionality of this website to be top-notch and very intuitive. The attention to detail is apparent, and the ability to customize various elements ensures that each event we plan is unique and memorable. Moreover, the responsive design means we can operate efficiently from any device, which is a huge benefit in our fast-paced environment.",
+    author: "Samantha Lee",
+    rating: 4,
+    image: "/review-2.jpg",
+  },
+  {
+    text: "Excellent website with great layout and easy navigation. It truly highlights our floral arrangements with elegance, bringing out the vibrant colors and intricate designs of our products. The high-resolution image gallery enhances the visual appeal, providing our clients with a realistic preview of what they can expect on their special day. Additionally, the SEO optimization has significantly increased our online visibility, attracting more customers to our business.",
+    author: "Carlos G. Murphy",
+    rating: 5,
+    image: "/review-3.jpg",
   },
 ];
