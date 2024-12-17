@@ -4,7 +4,15 @@ export const scrollToSection = (e: any) => {
   const targetElement = document.getElementById(targetId);
 
   if (targetElement) {
-    targetElement.scrollIntoView({ behavior: "smooth" });
+    const offset = 50;
+    const elementPosition =
+      targetElement.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
   }
 };
 
