@@ -33,16 +33,16 @@ export const navList = [
 
 export const serviceData = [
   {
-    content: "Bespoke website design",
+    content: "Custom Website Design and Hosting",
   },
   {
-    content: "SEO-ready and easy-to-manage platforms",
+    content: "On-Page SEO (Search Engine Optimization) ",
   },
   {
-    content: "Responsive, modern, and elegant design tailored for your brand",
+    content: "Local SEO (Google Maps Optimization)",
   },
   {
-    content: "Niche-Specific Sections",
+    content: "Facebook Marketing",
   },
 ];
 
@@ -52,22 +52,23 @@ export const portfolioData = [
     title: "Wedding Florists website",
     headline: "Stunning websites for the art of floristry.",
     description:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Your floral designs are more than arrangements—they’re works of art that transform weddings into unforgettable experiences. At Velour Web, we specialize in crafting custom websites for wedding florists that showcase your unique style and creativity. ",
+    
   },
   {
     imageUrl: "/portfolio-2.png",
     title: "Wedding Planners website",
     headline: "Websites that showcase your perfect events.",
     description:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "As a wedding planner, you create magical moments that couples will treasure forever. Your website should reflect the same level of elegance and professionalism that you bring to every event. At Velour Web, we design custom websites for wedding planners that capture your expertise and inspire trust in your clients.",
     direction: "row-reverse",
   },
   {
     imageUrl: "/portfolio-3.png",
     title: "Wedding Venues website",
-    headline: "Stunning websites for Hair and Makeup Artists.",
+    headline: "Elegant websites to showcase your venue's charm.",
     description:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Your venue sets the stage for one of the most important days in a couple's life. At Velour Web, we create stunning websites for wedding venues that capture the beauty, elegance, and uniqueness of your space. A professionally designed website ensures your venue stands out and becomes the dream location for weddings and special events.",
   },
   {
     imageUrl: "/portfolio-4.png",
