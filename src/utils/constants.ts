@@ -75,7 +75,7 @@ export const portfolioData = [
     title: "Hair and Makeup Artists websites",
     headline: "Build trust with an elegant, professional website.",
     description:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Your artistry brings confidence and beauty to life’s most memorable moments. Whether it’s a bride’s big day or a glamorous event, your website should reflect your expertise and unique style. At Velour Web, we create stunning websites for hair and makeup artists that highlight your talent, build trust, and attract the clients you want.",
     direction: "row-reverse",
   },
 ];
