@@ -1,13 +1,14 @@
 "use client";
 
+import { use } from "react";
 import HeroSection from "@/ui/blogDetails/HeroSecion";
 import ContentSection from "@/ui/blogDetails/ContentSection";
-import { blogData } from "@/utils/constants";
-import { use } from "react";
+import useHomeStore from "@/store/home";
 
 const BlogDetails = ({ params }: { params: any }) => {
   const { slug }: any = use(params);
-  const post = blogData.find((post) => post.slug === slug);
+  const { blogs } = useHomeStore();
+  const post = blogs.find((post) => post.slug === slug);
 
   if (!post) {
     return <></>;
@@ -16,7 +17,7 @@ const BlogDetails = ({ params }: { params: any }) => {
   return (
     <div>
       <HeroSection post={post} />
-      <ContentSection htmlContent={post.content} />
+      <ContentSection htmlContent={post?.content} />
     </div>
   );
 };

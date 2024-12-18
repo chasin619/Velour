@@ -19,7 +19,9 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 z-50 w-full flex justify-between items-center mx-auto px-5 py-6 glass-effect">
       <div className="max-w-[1400px] w-full flex justify-between items-center mx-auto">
-        <p className="font-extrabold text-4xl">velour</p>
+        <Link href="/">
+          <p className="font-extrabold text-4xl">velour</p>
+        </Link>
         <ul className="hidden lg:flex justify-center items-center gap-12">
           {navList.map((item, index) => (
             <li
