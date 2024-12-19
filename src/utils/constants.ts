@@ -1,3 +1,5 @@
+import { imageOptimizer } from "next/dist/server/image-optimizer";
+
 export const BASE_URL = "https://velourweb-admin.vercel.app";
 
 export const navList = [

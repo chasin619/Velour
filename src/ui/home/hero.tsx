@@ -22,7 +22,15 @@ const Hero = () => {
           onClick={scrollToSection}
         />
       </div>
-      <Image src="/hero.png" alt="Hero Image" height="450" width="600" />
+      <div className="xs:hidden md:block">
+        <Image
+          src="/hero.png"
+          alt="Hero Image"
+          width={450}
+          height={200}
+          className="custom-hero-image"
+        />
+      </div>
     </section>
   );
 };
