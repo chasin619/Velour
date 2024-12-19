@@ -159,8 +159,8 @@ export const blogData = [
 
 export const reviews = [
   {
-    text: "This platform has transformed our event planning process, making it incredibly efficient and visually appealing. From the intuitive interface to the exceptional customer support, everything has been thoughtfully designed to cater to our needs as wedding planners. The ease of use allows us to focus more on creative aspects without worrying about logistical complexities.",
-    author: "James C. Foster",
+    text: "This platform has transformed our event planning process, making it incredibly efficient and visually appealing. From the intuitive interface to the exceptional customer support, everything has been thoughtfully designed to cater to our needs as wedding planners. The ease of use allows us to focus more on creative aspects without worrying about logistical complexities. https://arielchiu.com/",
+    author: "Ariel Chiu",
     rating: 5,
     image: "/review-1.jpg",
   },
@@ -171,8 +171,8 @@ export const reviews = [
     image: "/review-2.jpg",
   },
   {
-    text: "Excellent website with great layout and easy navigation. It truly highlights our floral arrangements with elegance, bringing out the vibrant colors and intricate designs of our products. The high-resolution image gallery enhances the visual appeal, providing our clients with a realistic preview of what they can expect on their special day. Additionally, the SEO optimization has significantly increased our online visibility, attracting more customers to our business.",
-    author: "Carlos G. Murphy",
+    text: "Excellent website https://www.scarletevents.com/ with great layout and easy navigation. It truly highlights our floral arrangements with elegance, bringing out the vibrant colors and intricate designs of our products. The high-resolution image gallery enhances the visual appeal, providing our clients with a realistic preview of what they can expect on their special day. Additionally, the SEO optimization has significantly increased our online visibility, attracting more customers to our business.",
+    author: "Scarlet",
     rating: 5,
     image: "/review-3.jpg",
   },
