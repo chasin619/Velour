@@ -24,11 +24,13 @@ const Hero = () => {
       </div>
       <div className="xs:hidden md:block">
         <Image
-          src="/hero.png"
+          src="/hero.webp"
           alt="Hero Image"
+          loading="lazy"
+          objectFit="cover"
           width={450}
           height={200}
-          className="custom-hero-image"
+          className="rounded-lg"
         />
       </div>
     </section>

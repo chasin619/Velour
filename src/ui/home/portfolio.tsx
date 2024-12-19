@@ -28,9 +28,12 @@ const Portfolio: React.FC = () => {
             <Image
               src={portfolio.imageUrl}
               alt={`${portfolio.headline} Image`}
+              loading="lazy"
+              objectFit="cover"
               height={540}
               width={500}
-            />
+              className="rounded-lg"
+             />
             <div className="xs:w-full md:w-1/2">
               <p className="text-yellow-500 mb-2 font-medium md:text-xl">
                 {portfolio.title}

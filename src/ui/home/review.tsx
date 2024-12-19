@@ -33,7 +33,9 @@ const Review = () => {
                     width={41}
                     height={41}
                     layout="responsive"
+                    loading="lazy"
                     objectFit="cover"
+                    className="rounded-lg"
                   />
                 </div>
                 <p className="text-darkBlack md:text-lg">{review.author}</p>

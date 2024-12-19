@@ -50,7 +50,7 @@ export const serviceData = [
 
 export const portfolioData = [
   {
-    imageUrl: "/portfolio-1.png",
+    imageUrl: "/portfolio-1.webp",
     title: "Wedding Florists website",
     headline: "Stunning websites for the art of floristry.",
     description:
@@ -58,7 +58,7 @@ export const portfolioData = [
     
   },
   {
-    imageUrl: "/portfolio-2.png",
+    imageUrl: "/portfolio-2.webp",
     title: "Wedding Planners website",
     headline: "Websites that showcase your perfect events.",
     description:
@@ -66,14 +66,14 @@ export const portfolioData = [
     direction: "row-reverse",
   },
   {
-    imageUrl: "/portfolio-3.png",
+    imageUrl: "/portfolio-3.webp",
     title: "Wedding Venues website",
     headline: "Elegant websites to showcase your venue's charm.",
     description:
       "Your venue sets the stage for one of the most important days in a couple's life. At Velour Web, we create stunning websites for wedding venues that capture the beauty, elegance, and uniqueness of your space. A professionally designed website ensures your venue stands out and becomes the dream location for weddings and special events.",
   },
   {
-    imageUrl: "/portfolio-4.png",
+    imageUrl: "/portfolio-4.webp",
     title: "Hair and Makeup Artists websites",
     headline: "Build trust with an elegant, professional website.",
     description:
@@ -162,18 +162,18 @@ export const reviews = [
     text: "This platform has transformed our event planning process, making it incredibly efficient and visually appealing. From the intuitive interface to the exceptional customer support, everything has been thoughtfully designed to cater to our needs as wedding planners. The ease of use allows us to focus more on creative aspects without worrying about logistical complexities. https://arielchiu.com/",
     author: "Ariel Chiu",
     rating: 5,
-    image: "/review-1.jpg",
+    image: "/review-1.webp",
   },
   {
     text: "As a veteran in the wedding industry, I find the design and functionality of this website to be top-notch and very intuitive. The attention to detail is apparent, and the ability to customize various elements ensures that each event we plan is unique and memorable. Moreover, the responsive design means we can operate efficiently from any device, which is a huge benefit in our fast-paced environment.",
     author: "Samantha Lee",
     rating: 4,
-    image: "/review-2.jpg",
+    image: "/review-2.webp",
   },
   {
     text: "Excellent website https://www.scarletevents.com/ with great layout and easy navigation. It truly highlights our floral arrangements with elegance, bringing out the vibrant colors and intricate designs of our products. The high-resolution image gallery enhances the visual appeal, providing our clients with a realistic preview of what they can expect on their special day. Additionally, the SEO optimization has significantly increased our online visibility, attracting more customers to our business.",
     author: "Scarlet",
     rating: 5,
-    image: "/review-3.jpg",
+    image: "/review-3.webp",
   },
 ];
