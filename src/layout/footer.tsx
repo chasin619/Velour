@@ -32,6 +32,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-end gap-12 border-t-[0.1px] py-6 border-white">
+          <a href="https://admin.velourweb.com" target="_blank" rel="noopener noreferrer" className="underline">Admin</a>
           <p className="text-sm font-extralight">Privacy & Policy</p>
           <p className="text-sm font-extralight">Terms & Conditions</p>
           <p className="text-sm font-extralight"> <a href="tel:+1234567890" className="underline">(858) 933-1860</a></p>

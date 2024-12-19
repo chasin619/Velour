@@ -13,7 +13,7 @@ export const navList = [
     targetAtr: "service",
   },
   {
-    name: "Review",
+    name: "Success Stories",
     href: "/",
     targetAtr: "review",
   },
@@ -41,7 +41,7 @@ export const serviceData = [
     content: "On-Page SEO (Search Engine Optimization) ",
   },
   {
-    content: "Local SEO (Google Maps Optimization)",
+    content: "Local SEO (Google Maps Optimization): We work with only one vendor per location to ensure there’s no competition among our clients.",
   },
   {
     content: "Facebook Marketing",
