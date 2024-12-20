@@ -27,7 +27,6 @@ const Hero = () => {
           src="/hero.webp"
           alt="Hero Image"
           loading="lazy"
-          objectFit="cover"
           width={450}
           height={200}
           className="rounded-lg"

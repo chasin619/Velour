@@ -29,7 +29,6 @@ const Portfolio: React.FC = () => {
               src={portfolio.imageUrl}
               alt={`${portfolio.headline} Image`}
               loading="lazy"
-              objectFit="cover"
               height={540}
               width={500}
               className="rounded-lg"
