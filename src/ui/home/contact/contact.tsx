@@ -20,18 +20,18 @@ const Contact = () => {
     >
       <div className="w-full flex justify-around items-center flex-col gap-1 text-center">
         <p className="xs:text-4xl lg:text-5xl font-bold">
-          Global Event Planners
+          Contact Velour Web
         </p>
         <p className="my-8 lg:text-lg">
-          Planning a special event? We'd love to hear from you! Please fill in
-          the form below to discuss your celebration with us.
+          Looking for new Website for wedding designer? Or help with Local SEO.
+          Send us a message and we get back to you ASAP.
         </p>
       </div>
       <form
         className="flex flex-col rounded-2xl lg:p-6 xs:p-4 gap-2 xs:w-full lg:max-w-5xl"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <p className="my-4 lg:text-lg text-left">Dear Scarlet,</p>
+        <p className="my-4 lg:text-lg text-left">Hello, developer,</p>
         <p className="lg:text-lg">
           <span className="border-b border-white pb-3 mb-4 inline-block">
             {" "}
@@ -59,7 +59,7 @@ const Contact = () => {
             {...register("area")}
             placeholder="Miami"
             error={errors}
-            styles="!max-w-20"
+            styles="!max-w-30"
           />{" "}
           <span className="border-b border-white pb-3 mb-4 inline-block">
             area. I am also interested in
@@ -102,7 +102,7 @@ const Contact = () => {
             {...register("phone")}
             placeholder="(978) 319-1503"
             error={errors}
-            styles="!max-w-36"
+            styles="!max-w-40"
           />
           <span className="border-b border-white pb-3 mb-4 inline-block">
             Looking forward to hearing from you soon.
