@@ -24,7 +24,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ post }) => {
             width={1000}
             height={500}
             alt={post.title}
-            objectFit="contain"
             className="w-full h-full object-cover rounded-3xl shadow-md"
           />
         )}

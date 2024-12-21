@@ -1,34 +1,31 @@
 import React from "react";
 
 type InputProps = {
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   name?: string;
   error?: any;
+  styles?: string;
 };
 
 const Input: React.FC<InputProps> = ({
-  value,
-  onChange,
   placeholder,
   name,
   error,
+  styles,
   ...props
 }) => {
   const errorMsg = error[name || ""]?.message;
   return (
-    <div className="flex flex-col">
-      <input
-        {...props}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        name={name}
-        className="border border-[#E6E6E6] rounded-md p-4 xs:w-full lg:w-[500px] text-darkBlack"
-      />
-      {errorMsg && <p className="text-[#ff2c2c] p-2">{errorMsg}</p>}
-    </div>
+    <input
+      {...props}
+      placeholder={placeholder}
+      name={name}
+      className={
+        `bg-transparent border-b-4 border-[#E6E6E6] p-2 max-w-32 text-white outline-none ${
+          errorMsg ? "border-red-500" : ""
+        } ${styles}`
+      }
+    />
   );
 };
 

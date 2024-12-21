@@ -32,9 +32,7 @@ const Review = () => {
                     alt="Review Image"
                     width={41}
                     height={41}
-                    layout="responsive"
                     loading="lazy"
-                    objectFit="cover"
                     className="rounded-lg"
                   />
                 </div>

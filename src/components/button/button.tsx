@@ -5,6 +5,7 @@ interface ButtonProps {
   buttonStyles?: string;
   disabled?: boolean;
   onClick?: (e: any) => void;
+  props?: any;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,9 +17,11 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-    {...props}
+      {...props}
       onClick={onClick}
-      className={`bg-yellow-400 text-black cursor-pointer font-medium px-10 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-yellow-500 hover:shadow-lg ${buttonStyles} ${disabled && "opacity-50"}`}
+      className={`bg-yellow-400 text-black cursor-pointer font-medium px-10 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-yellow-500 hover:shadow-lg ${buttonStyles} ${
+        disabled && "opacity-50"
+      }`}
     >
       {title}
     </button>

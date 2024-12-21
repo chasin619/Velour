@@ -6,7 +6,7 @@ import { Input } from "@/components/input";
 import useContact from "./action";
 
 const Contact = () => {
-  const { FEILDS, onSubmit, form, isLoading } = useContact();
+  const { onSubmit, form, isLoading } = useContact();
   const {
     handleSubmit,
     register,
@@ -15,51 +15,102 @@ const Contact = () => {
 
   return (
     <section
-      className="flex justify-around items-center xs:flex-col md:flex-row gap-10 max-w-[1400px] mx-auto xs:px-5 lg:px-8 xs:py-12 lg:py-20 min-h-[60vh]"
+      className="flex justify-around items-center flex-col max-w-[1400px] mx-auto xs:px-5 lg:px-8 xs:py-12 lg:py-20 min-h-[60vh]"
       id="contact-us"
     >
-      <div className="xs:w-full lg:w-1/2">
-        <p className="text-yellow-500 mb-2 font-medium xs:text-2xl lg:text-3xl">
-          Ready to elevate your brand?
-        </p>
+      <div className="w-full flex justify-around items-center flex-col gap-1 text-center">
         <p className="xs:text-4xl lg:text-5xl font-bold">
-          Schedule free <br /> discovery call today!
+          Global Event Planners
         </p>
-        <p className="mt-8 mb-6 max-w-[520px] lg:text-lg">
-          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-          and typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book.
+        <p className="my-8 lg:text-lg">
+          Planning a special event? We'd love to hear from you! Please fill in
+          the form below to discuss your celebration with us.
         </p>
       </div>
       <form
-        className="bg-lightGray flex flex-col justify-center items-center rounded-2xl lg:p-6 xs:p-4 gap-2 xs:w-full lg:w-auto"
+        className="flex flex-col rounded-2xl lg:p-6 xs:p-4 gap-2 xs:w-full lg:max-w-5xl"
         onSubmit={handleSubmit(onSubmit)}
       >
-        {FEILDS.map((feild: any, index: number) => (
+        <p className="my-4 lg:text-lg text-left">Dear Scarlet,</p>
+        <p className="lg:text-lg">
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            {" "}
+            My name is{" "}
+          </span>
           <Input
-            {...feild}
-            {...register(feild.name)}
-            key={index}
+            {...register("name")}
+            placeholder="Emily Jane"
+            name="name"
             error={errors}
           />
-        ))}
-        <textarea
-          {...register("message")}
-          name="message"
-          id="message"
-          placeholder="Message"
-          className="border border-[#E6E6E6] rounded-md p-4 xs:w-full lg:w-[500px] text-darkBlack"
-          rows={5}
-        />
-        {errors.message && (
-          <p className="text-[#ff2c2c] w-full text-left">
-            {errors.message.message}
-          </p>
-        )}
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            and I am a{" "}
+          </span>
+          <Input
+            {...register("business")}
+            placeholder="Wedding Florist"
+            error={errors}
+            styles="!max-w-40"
+          />
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            in
+          </span>
+          <Input
+            {...register("area")}
+            placeholder="Miami"
+            error={errors}
+            styles="!max-w-20"
+          />{" "}
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            area. I am also interested in
+          </span>
+        </p>
+        <p className="lg:text-lg">
+          <Input
+            {...register("service")}
+            placeholder="New Website Design"
+            error={errors}
+            styles="!max-w-52"
+          />{" "}
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            Also interested in{" "}
+          </span>
+          <Input
+            {...register("localSEO")}
+            placeholder="Local SEO"
+            error={errors}
+            styles="!max-w-28"
+          />{" "}
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            My email is
+          </span>
+          <Input
+            {...register("email")}
+            placeholder="john@gmail.com"
+            error={errors}
+            styles="!max-w-60"
+          />
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            and My
+          </span>
+        </p>
+        <p className="lg:text-lg">
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            Phone Number is
+          </span>
+          <Input
+            {...register("phone")}
+            placeholder="(978) 319-1503"
+            error={errors}
+            styles="!max-w-36"
+          />
+          <span className="border-b border-white pb-3 mb-4 inline-block">
+            Looking forward to hearing from you soon.
+          </span>
+        </p>
         <Button
           title="Submit"
-          buttonStyles="w-full py-4 mt-2"
+          buttonStyles="w-40 py-4 mt-2 self-center mt-8"
           disabled={isLoading}
         />
       </form>
